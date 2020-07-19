@@ -242,7 +242,7 @@
 		\textbf{#2}%
 		\hfill%
 		{\footnotesize#3}\\%
-		#4\vspace{0.1\parsep}%
+		#4\vspace{0.0\parsep}%
 	}\\
 }
 

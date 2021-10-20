@@ -269,6 +269,6 @@
 %	 MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=7.6cm,top=0.0cm,right=1cm,bottom=0.0cm,nohead,nofoot]{geometry}
 
 \RequirePackage{hyperref}

@@ -72,7 +72,7 @@
 
 % Define custom commands for CV info
 %\newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
-\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
+%\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 %\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 %\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
@@ -154,7 +154,7 @@
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
 		%	\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
                                 \ifthenelse{\equal{\givenlinkedin}{}}{}{\textsc{\large\icon{\faLinkedin}} & \href{https://at.linkedin.com/in/danielbekesi}{\givenlinkedin} \\}
- \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}}
+% \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}}
 
 
 		\end{tabular}

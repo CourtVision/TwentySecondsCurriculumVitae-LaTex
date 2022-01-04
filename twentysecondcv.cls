@@ -163,7 +163,7 @@
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\aboutme}{}}{}{
-					\vspace{-0.3cm}
+					\vspace{0.2cm}
 			\profilesection{About me}
 			\begin{flushleft}
 				\aboutme
@@ -184,6 +184,42 @@
 			
 	\end{textblock}
 }
+
+
+
+\newcommand{\makeprofiletwo}{
+	\begin{tikzpicture}[remember picture,overlay]
+   		\node [rectangle, fill=sidecolor, anchor=north, minimum width=9cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
+	\end{tikzpicture}
+
+	%------------------------------------------------
+
+	\begin{textblock}{6}(0.5, 0.2)
+			
+		%------------------------------------------------
+		
+		\ifthenelse{\equal{\profilepic}{}}{}{
+			\begin{center}
+				\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
+					\clip (600/2, 567/2) circle (567/2);
+					\node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth]{\profilepic}};
+				\end{tikzpicture}
+			\end{center}
+		}
+
+		%------------------------------------------------
+
+		{\Huge\color{mainblue}\cvname}
+		%------------------------------------------------ 
+
+		{\Large\color{black!80}\cvjobtitle}
+
+		%------------------------------------------------ 	
+			
+	\end{textblock}
+}
+
+
 
 %----------------------------------------------------------------------------------------
 %	 COLOURED SECTION TITLE BOX

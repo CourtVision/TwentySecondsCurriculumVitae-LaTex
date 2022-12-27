@@ -71,15 +71,18 @@
 }
 
 % Define custom commands for CV info
-%\newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
-%\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
-%\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
+\newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
+\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
+\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
-%\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\cvgit}[1]{\renewcommand{\cvgit}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
+\newcommand{\cvcitizen}[1]{\renewcommand{\cvcitizen}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
+
 
 \newcommand{\givenlinkedin}{}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\givenlinkedin}{#1}}
@@ -151,24 +154,28 @@
 		\renewcommand{\arraystretch}{1.6}
 		\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
 		%	\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
-			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
+		%	\ifthenelse{\equal{\cvcitizen}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvcitizen\\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faGlobe}} & \cvaddress\\}
+		           \ifthenelse{\equal{\givenlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \href{https://at.linkedin.com/in/danielbekesi}{\givenlinkedin} \\}
+			\ifthenelse{\equal{\cvgit}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{https://github.com/CourtVision/}{\cvgit} \\}
+			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\faLaptop}} & \href{https://www.credly.com/users/daniel-bekesi.9b2b92f6/badges}{\cvsite} \\}
 		%	\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
-                                \ifthenelse{\equal{\givenlinkedin}{}}{}{\textsc{\large\icon{\faLinkedin}} & \href{https://at.linkedin.com/in/danielbekesi}{\givenlinkedin} \\}
-% \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}}
 
+ 		%	\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}}
 
+ \\
 		\end{tabular}
 
 
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\aboutme}{}}{}{
-					\vspace{0.2cm}
+					\vspace{-0.5cm}
 			\profilesection{About me}
 			\begin{flushleft}
 				\aboutme
 			\end{flushleft}
-		           	\vspace{0.3cm}
+		           	\vspace{0.1cm}
 		}
 
 		%------------------------------------------------

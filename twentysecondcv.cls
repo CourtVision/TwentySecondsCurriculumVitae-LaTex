@@ -152,6 +152,7 @@
 		%------------------------------------------------
 
 		\renewcommand{\arraystretch}{1.6}
+\renewcommand{\arraystretch}{1.6}
 		\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
 		%	\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
 		%	\ifthenelse{\equal{\cvcitizen}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvcitizen\\}
@@ -163,19 +164,20 @@
 
  		%	\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}}
 
- \\
+
+
 		\end{tabular}
 
 
 		%------------------------------------------------
 		
 		\ifthenelse{\equal{\aboutme}{}}{}{
-					\vspace{-0.5cm}
+					\vspace{0.2cm}
 			\profilesection{About me}
 			\begin{flushleft}
 				\aboutme
 			\end{flushleft}
-		           	\vspace{0.1cm}
+		           	\vspace{0.2cm}
 		}
 
 		%------------------------------------------------
@@ -285,7 +287,7 @@
 		\textbf{#2}%
 		\hfill%
 		{\footnotesize#3}\\%
-		#4\vspace{0.0\parsep}%
+		#4\vspace{0.6\parsep}%
 	}\\
 }
 
